@@ -6686,6 +6686,11 @@ p {
   -webkit-transform: scaleX(1.2) translateY(1px) !important;
       -ms-transform: scaleX(1.2) translateY(1px) !important;
           transform: scaleX(1.2) translateY(1px) !important; }
+  .wave-bottom img {
+    width: 100% !important; }
+
+.wave-pattern img {
+  width: 100% !important; }
 
 /* HOME - LANDING */
 @media screen and (min-width: 40em) {
