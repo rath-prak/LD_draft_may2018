@@ -6339,7 +6339,7 @@ p {
   height: 80px;
   z-index: 2000;
   background: #0c6077;
-  background: rgba(12, 96, 119, 0.9); }
+  background: #0c6077; }
 
 .nav-wrapper-bg {
   background: #0c6077; }
@@ -7047,10 +7047,19 @@ p {
   font-weight: 700;
   text-decoration: underline; }
 
+.faqs-wrapper .faqs-section {
+  margin-bottom: 30px; }
+
+.faqs-wrapper h5 {
+  color: #284856; }
+
 .faqs-wrapper .faqs-intro {
   margin-top: 150px; }
   .faqs-wrapper .faqs-intro h2 {
     color: #284856; }
+  .faqs-wrapper .faqs-intro p {
+    color: #284856;
+    font-size: 18px; }
   .faqs-wrapper .faqs-intro a {
     color: #284856;
     font-weight: bold;
