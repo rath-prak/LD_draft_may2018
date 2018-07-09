@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Laundry Drop | Laundry & Dry Cleaning delivery and pick up service</title>
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
   </head>
 
   <script>
@@ -20,11 +21,32 @@
         newWindow.document.body.insertAdjacentHTML('afterbegin', html);
       };
     }
+
+    function login() {
+    let newWindow = open('https://shop.laundrydrop.co.nz/account/login', 'example', 'width=900px,height=800px')
+    newWindow.focus();
+
+      newWindow.onload = function() {
+        let html = `<div style="font-size:30px">Welcome!</div>`;
+        newWindow.document.body.insertAdjacentHTML('afterbegin', html);
+      };
+    }
+
+    function signUp() {
+    let newWindow = open('https://shop.laundrydrop.co.nz/account/register', 'example', 'width=900px,height=800px')
+    newWindow.focus();
+
+      newWindow.onload = function() {
+        let html = `<div style="font-size:30px">Welcome!</div>`;
+        newWindow.document.body.insertAdjacentHTML('afterbegin', html);
+      };
+    }
+
   </script>
 
   <body>
 
-    <header id="header" class="nav-wrapper header" style="background:#0c6077">
+    <header id="header" class="nav-wrapper header">
       <div class="grid-container nav-container">
         <div class="main-navigation">
           <div class="nav-logo">
@@ -37,24 +59,30 @@
                 <div class="menu-underline"></div>
               </li>
               <li>
-                <a href="coverage.html">Coverage</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li>
                 <a href="stores.html">Stores</a>
                 <div class="menu-underline"></div>
               </li>
               <li>
-                <a href="#">FAQS</a>
+                <a href="faqs.html">FAQs</a>
                 <div class="menu-underline"></div>
               </li>
-              <li>
-                <a href="#">Contact</a>
+              <!-- <li>
+                <a href="contact.html">Contact</a>
                 <div class="menu-underline"></div>
+              </li> -->
+              <!-- <li>
+                <a href="#" onclick="setTimeout(openShop);">Order</a>
+              </li> -->
+              <li>
+                <a href="order.html">Order</a>
               </li>
               <li>
-                <a href="#"  onclick="setTimeout(openShop);" class="menu-btn">Order now</a>
+                <!-- <a href="#" onclick="setTimeout(login);" class="menu-btn">Log in</a> -->
+                <a href="https://orders.laundrydrop.co.nz/account/login"class="menu-btn">Log in</a>
               </li>
+              <!-- <li>
+                <a href="#" onclick="setTimeout(signUp);" class="menu-btn">Sign up</a>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -77,10 +105,14 @@
             <li><a href="coverage.html">Coverage</a></li>
             <li><a href="stores.html">Stores</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <li><a href="order.html">Order</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-              <a href="#"  onclick="setTimeout(openShop);" class="menu-btn">Order now</a>
+              <a href="#" onclick="setTimeout(login);" class="menu-btn">Log in</a>
             </li>
+            <!-- <li>
+              <a href="#" onclick="setTimeout(signUp);" class="menu-btn">Sign up</a>
+            </li> -->
           </ul>
         </div>
     
@@ -109,9 +141,9 @@
             </div>
           </div>
       </div>
-      <div class="wave-pattern">
+      <!-- <div class="wave-pattern">
         <img src="assets/img/Waves_03.svg" alt="">
-      </div>
+      </div> -->
     </div>
     
     
@@ -120,40 +152,152 @@
         <div class="grid-x">
           <div class="cell large-10 large-offset-1 stores-intro">
             <h3>Drop off and pick up from any of the following stores.</h3>
+    
+            <p>For clients who do not have an account click <a href="order.html">here</a> to place an order for pickup</p>
+            <p>If you have an account contact the relavant store below.</p>
           </div>
         </div>
+    
+    
+        <div class="grid-x">
+      <div class="cell large-10 large-offset-1 mall">
+        <div class="grid-x grid-margin-x">
+          <div class="cell large-10 stores-heading">
+            <h5>Mall Dry Cleaners</h5>
+          </div>
+            <div class="cell large-6 medium-6 small-12">
+              <div class="store-item">
+                <div class="p"><i class="ion-location"></i></div>
+                <div class="store-details">
+                  <h4>Mall Tory</h4>
+                  <p><strong>80 Tory Street, Wellington</strong></p>
+                  <p><strong>PHONE:</strong><a href="tel:04 384 6668">(04) 384 6668</a></p>
+                  <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri) | 8.15am - 3pm (Sat)</p>
+                </div>
+              </div>
+    
+              <div class="store-item">
+                <div class="p"><i class="ion-location"></i></div>
+                <div class="store-details">
+                  <h4>Johnston Street</h4>
+                  <p><strong>36 Johnston Street, Wellington</strong></p>
+                  <p><strong>PHONE:</strong><a href="tel:04 384 6669">(04) 384 6669</a></p>
+                  <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri) | 9.30am - 2pm (Sat)</p>
+                </div>
+              </div>
+    
+              <div class="store-item">
+                <div class="p"><i class="ion-location"></i></div>
+                <div class="store-details">
+                  <h4>PwC Wellington</h4>
+                  <p><strong>113-119 The Terrace, Wellington</strong></p>
+                  <p>Coming soon June 2018</p>
+                </div>
+              </div>
+            </div>
+    
+            <div class="cell large-6 medium-6 small-12">
+    
+              <div class="store-item">
+                <div class="p"><i class="ion-location"></i></div>
+                <div class="store-details">
+                  <h4>The Terrace</h4>
+                  <p><strong>91 The Terrace, Wellington</strong></p>
+                  <p><strong>PHONE:</strong><a href="tel:04 920 2929">(04) 920 2929</a></p>
+                  <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri)</p>
+                </div>
+              </div>
+    
+              <div class="store-item">
+                <div class="p"><i class="ion-location"></i></div>
+                <div class="store-details">
+                  <h4>Victoria Street</h4>
+                  <p><strong>20 Victoria Street, Wellington</strong></p>
+                  <p><strong>PHONE:</strong><a href="tel:04 499 1465">(04) 499 1465</a></p>
+                  <p><strong>OPERATING HOURS: <br></strong>7.30am - 6pm (Mon - Fri)</p>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+      </div>
+      <!-- end of mall -->
+    
+      <div class="grid-x">
+        <div class="cell large-10 large-offset-1 mall">
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-10 stores-heading">
+              <h5>New Zealand Dry Cleaners</h5>
+            </div>
+              <div class="cell large-6 medium-6 small-12">
+                <div class="store-item">
+                  <div class="p"><i class="ion-location"></i></div>
+                  <div class="store-details">
+                    <h4>Railway Station</h4>
+                    <p><strong>Inside Wellington Railway Station</strong></p>
+                    <p><strong>PHONE:</strong><a href="tel:04 499 8131">(04) 499 8131</a></p>
+                    <p><strong>OPERATING HOURS: <br></strong>7:00am - 6pm (Mon - Fri) | CLOSED (Sat)</p>
+                  </div>
+                </div>
+    
+                <div class="store-item">
+                  <div class="p"><i class="ion-location"></i></div>
+                  <div class="store-details">
+                    <h4>Johnsonville Mall</h4>
+                    <p><strong>32 Johnsonville Road,
+                    Johnsonville</strong></p>
+                    <p><strong>PHONE:</strong><a href="tel:04 478 5920">(04) 478 5920</a></p>
+                    <p><strong>OPERATING HOURS: <br></strong>8:00am - 5:30pm (Mon - Fri) | 9:00am - 2pm (Sat)</p>
+                  </div>
+                </div>
+    
+              </div>
+    
+              <div class="cell large-6 medium-6 small-12">
+                <div class="store-item">
+                  <div class="p"><i class="ion-location"></i></div>
+                  <div class="store-details">
+                    <h4>Molesworth St</h4>
+                    <p><strong>164 Molesworth St
+                    Thorndon, Wellington</strong></p>
+                    <p><strong>PHONE:</strong><a href="tel:04 471 1863">(04) 471 1863</a></p>
+                    <p><strong>OPERATING HOURS: <br></strong>7:30am - 5:45pm (Mon - Fri) | 9:00am - 1pm (Sat)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+        <!-- end of NZDC -->
     
         <div class="grid-x">
           <div class="cell large-10 large-offset-1 mall">
             <div class="grid-x grid-margin-x">
               <div class="cell large-10 stores-heading">
-                <h5>Mall Dry Cleaners</h5>
+                <h5>Taylors Dry Cleaners</h5>
               </div>
                 <div class="cell large-6 medium-6 small-12">
                   <div class="store-item">
                     <div class="p"><i class="ion-location"></i></div>
                     <div class="store-details">
-                      <h4>Mall Tory</h4>
-                      <p><strong>80 Tory Street, Wellington</strong></p>
-                      <p><strong>PHONE:</strong> (04) 384 6668</p>
-                      <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri) | 8.15am - 3pm (Sat)</p>
+                      <h4>Taylors Karori</h4>
+                      <p><strong>236 Karori Road
+                      (Karori Mall), Karori</strong></p>
+                      <p><strong>PHONE:</strong><a href="tel:04 476 6354">(04) 476 6354</a></p>
+                      <p><strong>OPERATING HOURS: <br></strong>7:30am - 5:30pm (Mon - Fri) | 9:30am - 12:30pm (Sat)</p>
                     </div>
                   </div>
                   <div class="store-item">
                     <div class="p"><i class="ion-location"></i></div>
                     <div class="store-details">
-                      <h4>Victoria Street</h4>
-                      <p><strong>20 Victoria Street, Wellington</strong></p>
-                      <p><strong>PHONE:</strong> (04) 499 1465</p>
-                      <p><strong>OPERATING HOURS: <br></strong>7.30am - 6pm (Mon - Fri)</p>
-                    </div>
-                  </div>
-                  <div class="store-item">
-                    <div class="p"><i class="ion-location"></i></div>
-                    <div class="store-details">
-                      <h4>PwC Wellington</h4>
-                      <p><strong>113-119 The Terrace, Wellington</strong></p>
-                      <p>Coming soon June 2018</p>
+                      <h4>Taylors Khandallah</h4>
+                      <p><strong>7 Ganges Road,
+                      Khandallah</strong></p>
+                      <p><strong>PHONE:</strong><a href="tel:04 479 6342">(04) 479 6342</a></p>
+                      <p><strong>OPERATING HOURS: <br></strong>8:00am - 6pm (Mon - Fri) | 9:30am - 12pm (Sat)</p>
                     </div>
                   </div>
                 </div>
@@ -162,19 +306,20 @@
                   <div class="store-item">
                     <div class="p"><i class="ion-location"></i></div>
                     <div class="store-details">
-                      <h4>Johnston Street</h4>
-                      <p><strong>36 Johnston Street, Wellington</strong></p>
-                      <p><strong>PHONE:</strong> (04) 384 6669</p>
-                      <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri) | 9.30am - 2pm (Sat)</p>
+                      <h4>Taylors Lower Hutt</h4>
+                      <p><strong>455 High Street,
+                      Lower Hutt</strong></p>
+                      <p><strong>PHONE:</strong><a href="tel:04 566 0994">(04) 566 0994</a></p>
+                      <p><strong>OPERATING HOURS: <br></strong>8:00am - 5:30pm (Mon - Fri) | 9:00am - 12pm (Sat)</p>
                     </div>
                   </div>
                   <div class="store-item">
                     <div class="p"><i class="ion-location"></i></div>
                     <div class="store-details">
-                      <h4>The Terrace</h4>
-                      <p><strong>91 The Terrace, Wellington</strong></p>
-                      <p><strong>PHONE:</strong> TBD</p>
-                      <p><strong>OPERATING HOURS: <br></strong>7.15am - 6pm (Mon - Fri)</p>
+                      <h4>Taylors Porirua</h4>
+                      <p><strong>6 Serlby Place, Porirua</strong></p>
+                      <p><strong>PHONE:</strong><a href="tel:04 237 8253">(04) 237 8253</a></p>
+                      <p><strong>OPERATING HOURS: <br></strong>8:00am - 5pm (Mon - Fri) | 9:00am - 12pm (Sat)</p>
                     </div>
                   </div>
                 </div>
@@ -182,174 +327,112 @@
             </div>
     
           </div>
-          <!-- end of mall -->
+          <!-- end of Taylors -->
     
           <div class="grid-x">
             <div class="cell large-10 large-offset-1 mall">
               <div class="grid-x grid-margin-x">
                 <div class="cell large-10 stores-heading">
-                  <h5>New Zealand Dry Cleaners</h5>
+                  <h5>Kapti Dry Cleaners</h5>
                 </div>
                   <div class="cell large-6 medium-6 small-12">
                     <div class="store-item">
                       <div class="p"><i class="ion-location"></i></div>
                       <div class="store-details">
-                        <h4>Railway Station</h4>
-                        <p><strong>Inside Wellington Railway Station</strong></p>
-                        <p><strong>PHONE:</strong> (04) 499 8131</p>
-                        <p><strong>OPERATING HOURS: <br></strong>7:00am - 6pm (Mon - Fri) | CLOSED (Sat)</p>
+                        <h4>Kapiti</h4>
+                        <p><strong>8 Ihakara Street, Paraparaumu</strong></p>
+                        <p><strong>PHONE:</strong><a href="tel:04 298 6066">(04) 298 6066</a></p>
+                        <p><strong>OPERATING HOURS: <br></strong>8:00am - 5pm (Mon - Fri) | 9:30am - 1pm (Sat)</p>
                       </div>
                     </div>
+    
+                  </div>
+    
+                  <div class="cell large-6 medium-6 small-12">
+    
                     <div class="store-item">
                       <div class="p"><i class="ion-location"></i></div>
                       <div class="store-details">
-                        <h4>Molesworth St</h4>
-                        <p><strong>164 Molesworth St
-                        Thorndon, Wellington</strong></p>
-                        <p><strong>PHONE:</strong> (04) 471 1863</p>
-                        <p><strong>OPERATING HOURS: <br></strong>7:30am - 5:45pm (Mon - Fri) | 9:00am - 1pm (Sat)</p>
+                        <h4>Waikanae Dry Cleaners</h4>
+                        <p><strong>5-6 Frater Lane, Waikanae</strong></p>
+                        <p><strong>PHONE:</strong><a href="tel:04 293 5434">(04) 293 5434</a></p>
+                        <p><strong>OPERATING HOURS: <br></strong>9am - 5pm (Mon - Fri) | 9:30am - 1pm (Sat)</p>
                       </div>
                     </div>
-                  </div>
     
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end Kapiti Dry cleaners -->
+    
+          <div class="grid-x">
+            <div class="cell large-10 large-offset-1 mall">
+              <div class="grid-x grid-margin-x">
+                <div class="cell large-10 stores-heading">
+                  <h5>Willis Dry Cleaners</h5>
+                </div>
                   <div class="cell large-6 medium-6 small-12">
                     <div class="store-item">
                       <div class="p"><i class="ion-location"></i></div>
                       <div class="store-details">
-                        <h4>Johnsonville Mall</h4>
-                        <p><strong>32 Johnsonville Road,
-                        Johnsonville</strong></p>
-                        <p><strong>PHONE:</strong> (04) 478 5920</p>
-                        <p><strong>OPERATING HOURS: <br></strong>8:00am - 5:30pm (Mon - Fri) | 9:00am - 2pm (Sat)</p>
+                        <h4>Kilbirnie Dry Cleaners</h4>
+                        <p><strong>31a Bay Road, Kilbirnie</strong></p>
+                        <p><strong>PHONE:</strong><a href="tel:04 387 8990">(04) 387 8990</a></p>
+                        <p><strong>OPERATING HOURS: <br></strong>8:00am - 5pm (Mon - Fri) | 10:00am - 2pm (Sat)</p>
                       </div>
+                    </div>
+    
+                  </div>
+    
+                  <div class="cell large-6 medium-6 small-12">
+    
+                    <div class="store-item">
+                      <div class="p"><i class="ion-location"></i></div>
+                      <div class="store-details">
+                        <h4>Willis Street Dry Cleaners</h4>
+                        <p><strong>171 Willis Street, Wellington</strong></p>
+                        <p><strong>PHONE:</strong><a href="tel:04 384 7008">(04) 384 7008</a></p>
+                        <p><strong>OPERATING HOURS: <br></strong>7:30am - 6pm (Mon - Fri) | 9:30am - 1pm (Sat)</p>
+                      </div>
+                    </div>
+    
                     </div>
                   </div>
                 </div>
               </div>
-    
-            </div>
-            <!-- end of NZDC -->
-    
-            <div class="grid-x">
-              <div class="cell large-10 large-offset-1 mall">
-                <div class="grid-x grid-margin-x">
-                  <div class="cell large-10 stores-heading">
-                    <h5>Taylors Dry Cleaners</h5>
-                  </div>
-                    <div class="cell large-6 medium-6 small-12">
-                      <div class="store-item">
-                        <div class="p"><i class="ion-location"></i></div>
-                        <div class="store-details">
-                          <h4>Taylors Karori</h4>
-                          <p><strong>236 Karori Road
-                          (Karori Mall), Karori</strong></p>
-                          <p><strong>PHONE:</strong> (04) 476 6354</p>
-                          <p><strong>OPERATING HOURS: <br></strong>7:30am - 5:30pm (Mon - Fri) | 9:30am - 12:30pm (Sat)</p>
-                        </div>
-                      </div>
-                      <div class="store-item">
-                        <div class="p"><i class="ion-location"></i></div>
-                        <div class="store-details">
-                          <h4>Taylors Khandallah</h4>
-                          <p><strong>7 Ganges Road,
-                          Khandallah</strong></p>
-                          <p><strong>PHONE:</strong> (04) 479 6342</p>
-                          <p><strong>OPERATING HOURS: <br></strong>8:00am - 6pm (Mon - Fri) | 9:30am - 12pm (Sat)</p>
-                        </div>
-                      </div>
-                    </div>
-    
-                    <div class="cell large-6 medium-6 small-12">
-                      <div class="store-item">
-                        <div class="p"><i class="ion-location"></i></div>
-                        <div class="store-details">
-                          <h4>Taylors Lower Hutt</h4>
-                          <p><strong>455 High Street,
-                          Lower Hutt</strong></p>
-                          <p><strong>PHONE:</strong> (04) 566 0994</p>
-                          <p><strong>OPERATING HOURS: <br></strong>8:00am - 5:30pm (Mon - Fri) | 9:00am - 12pm (Sat)</p>
-                        </div>
-                      </div>
-                      <div class="store-item">
-                        <div class="p"><i class="ion-location"></i></div>
-                        <div class="store-details">
-                          <h4>Taylors Porirua</h4>
-                          <p><strong>6 Serlby Place, Porirua</strong></p>
-                          <p><strong>PHONE:</strong> (04) 237 8253</p>
-                          <p><strong>OPERATING HOURS: <br></strong>8:00am - 5pm (Mon - Fri) | 9:00am - 12pm (Sat)</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-              <!-- end of Taylors -->
+              <!-- end Willis Dry Cleaners -->
     
               <div class="grid-x">
                 <div class="cell large-10 large-offset-1 mall">
                   <div class="grid-x grid-margin-x">
                     <div class="cell large-10 stores-heading">
-                      <h5>Willis Dry Cleaners</h5>
+                      <h5>City Dry Cleaners</h5>
                     </div>
                       <div class="cell large-6 medium-6 small-12">
                         <div class="store-item">
                           <div class="p"><i class="ion-location"></i></div>
                           <div class="store-details">
-                            <h4>Willis Street Dry Cleaners</h4>
-                            <p><strong>171 Willis Street, Wellington</strong></p>
-                            <p><strong>PHONE:</strong> (04) 384 7008</p>
-                            <p><strong>OPERATING HOURS: <br></strong>7:30am - 6pm (Mon - Fri) | 9:30am - 1pm (Sat)</p>
+                            <h4>City Dry Cleaners</h4>
+                            <p><strong>Greenock House Ground Floor/102 Lambton Quay, Wellington</strong></p>
+                            <p><strong>PHONE:</strong><a href="tel:04 473 5445">(04) 473 5445</a></p>
+                            <p><strong>OPERATING HOURS: <br></strong>7:30am - 6pm (Mon - Fri) | 9:00am - 1pm (Sat)</p>
                           </div>
                         </div>
                       </div>
     
-                      <div class="cell large-6 medium-6 small-12">
-                        <div class="store-item">
-                          <div class="p"><i class="ion-location"></i></div>
-                          <div class="store-details">
-                            <h4>Kilbirnie Dry Cleaners</h4>
-                            <p><strong>31a Bay Road, Kilbirnie</strong></p>
-                            <p><strong>PHONE:</strong> (04) 387 8990 </p>
-                            <p><strong>OPERATING HOURS: <br></strong>8:00am - 5pm (Mon - Fri) | 10:00am - 2pm (Sat)</p>
-                          </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <!-- end Willis Dry Cleaners -->
+                  <!-- end City Dry Cleaners -->
     
-                  <div class="grid-x">
-                    <div class="cell large-10 large-offset-1 mall">
-                      <div class="grid-x grid-margin-x">
-                        <div class="cell large-10 stores-heading">
-                          <h5>City Dry Cleaners</h5>
-                        </div>
-                          <div class="cell large-6 medium-6 small-12">
-                            <div class="store-item">
-                              <div class="p"><i class="ion-location"></i></div>
-                              <div class="store-details">
-                                <h4>City Dry Cleaners</h4>
-                                <p><strong>Greenock House Ground Floor/102 Lambton Quay, Wellington</strong></p>
-                                <p><strong>PHONE:</strong> (04) 473 5445</p>
-                                <p><strong>OPERATING HOURS: <br></strong>7:30am - 6pm (Mon - Fri) | 9:00am - 1pm (Sat)</p>
-                              </div>
-                            </div>
-                          </div>
-    
-                          </div>
-                        </div>
-                      </div>
-                      <!-- end Willis Dry Cleaners -->
-    
-                </div>
-    
-        </div>
     
     
     
       </div>
+    </div>
+    
+    
     
     
     <div class="wave-bottom">
@@ -360,55 +443,50 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
     
-          <div class="cell large-3 medium-3 footer-contact">
+          <div class="cell large-3 medium-3 footer-brand">
             <div class="footer-logo">
               <img src="assets/img/logo.svg" alt="">
             </div>
+            <p>Proudly Wellington owned by the Mall Drycleaning Group</p>
             <div class="mall-logo">
               <img src="assets/img/mall_logo.svg" alt="Mall Group Logo">
             </div>
     
+          </div>
+    
+          <div class="cell large-2 medium-2">
+            <h6>COMPANY</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="stores.html">Stores</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="cell large-3 medium-3">
+            <h6>OUR BRANDS</h6>
+            <ul>
+              <li><a href="stores.html">Mall Dry Cleaners</a></li>
+              <li><a href="stores.html">New Zealand Dry Cleaners (NZDC)</a></li>
+              <li><a href="stores.html">Taylors Dry Cleaners</a></li>
+              <li><a href="stores.html">Kapiti Dry Cleaners</a></li>
+              <li><a href="stores.html">Willis Dry Cleaners</a></li>
+              <li><a href="stores.html">City Dry Cleaners</a></li>
+            </ul>
+          </div>
+    
+          <div class="cell large-4 medium-4 footer-contact">
+            <h6>CONTACT</h6>
+            <p>80 Tory Street, Wellington</p>
+            <p><strong>Phone:</strong> (04) 384 6668</p>
+            <p><strong>Email:</strong> <a href="mailto:info@laundrydrop.co.nz">info@laundrydrop.co.nz</a></p>
             <div class="social-footer">
               <ul>
+                <li>Follow us </li>
                 <li><a href="#"><img src="assets/img/social/twitter.svg" alt=""></a></li>
                 <li><a href="#"><img src="assets/img/social/facebook.svg" alt=""></a></li>
                 <li><a href="#"><img src="assets/img/social/instagram-logo.svg" alt=""></a></li>
               </ul>
-            </div>
-    
-          </div>
-    
-          <div class="cell large-3 medium-3">
-            <h6>Company</h6>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Coverage</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-    
-          <div class="cell large-3 medium-3">
-            <h6>Our Brands</h6>
-            <ul>
-              <li><a href="">Mall Dry Cleaners</a></li>
-              <li><a href="">New Zealand Dry Cleaners (NZDC)</a></li>
-              <li><a href="">Taylors Dry Cleaners</a></li>
-              <li><a href="">Kapiti Dry Cleaners</a></li>
-              <li><a href="">Willis Dry Cleaners</a></li>
-              <li><a href="">City Dry Cleaners</a></li>
-            </ul>
-          </div>
-    
-    
-          <div class="cell large-3 medium-3">
-            <div class="footer-subscribe">
-              <h5>Sign up to our newsletter</h5>
-              <p>Recieve special offers and news by subscribing to our monthly newsletters.</p>
-              <div class="subscribe-input">
-                <input type="text" placeholder="Email address" />
-                <a class="subscribe-btn" href="#">Subscribe</a>
-              </div>
             </div>
           </div>
     
@@ -417,11 +495,16 @@
     
     </footer>
     
-    <div class="copyright-wrapper">
+    <div class="terms-conditions">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell larger-12">
-            <p>© 2018 LaundryDrop, Wellington. All rights reserved.</p>
+            <ul>
+              <li>© 2018 LaundryDrop, Wellington. All rights reserved.</li>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Refund Policy</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
           </div>
         </div>
       </div>

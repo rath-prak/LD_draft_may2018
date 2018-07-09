@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Laundry Drop | Laundry & Dry Cleaning delivery and pick up service</title>
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" type="image/png" href="/assets/img/favicon.png"/>
   </head>
 
   <script>
@@ -20,11 +21,32 @@
         newWindow.document.body.insertAdjacentHTML('afterbegin', html);
       };
     }
+
+    function login() {
+    let newWindow = open('https://shop.laundrydrop.co.nz/account/login', 'example', 'width=900px,height=800px')
+    newWindow.focus();
+
+      newWindow.onload = function() {
+        let html = `<div style="font-size:30px">Welcome!</div>`;
+        newWindow.document.body.insertAdjacentHTML('afterbegin', html);
+      };
+    }
+
+    function signUp() {
+    let newWindow = open('https://shop.laundrydrop.co.nz/account/register', 'example', 'width=900px,height=800px')
+    newWindow.focus();
+
+      newWindow.onload = function() {
+        let html = `<div style="font-size:30px">Welcome!</div>`;
+        newWindow.document.body.insertAdjacentHTML('afterbegin', html);
+      };
+    }
+
   </script>
 
   <body>
 
-    <header id="header" class="nav-wrapper header" style="background:#0c6077">
+    <header id="header" class="nav-wrapper header">
       <div class="grid-container nav-container">
         <div class="main-navigation">
           <div class="nav-logo">
@@ -37,24 +59,30 @@
                 <div class="menu-underline"></div>
               </li>
               <li>
-                <a href="coverage.html">Coverage</a>
-                <div class="menu-underline"></div>
-              </li>
-              <li>
                 <a href="stores.html">Stores</a>
                 <div class="menu-underline"></div>
               </li>
               <li>
-                <a href="#">FAQS</a>
+                <a href="faqs.html">FAQs</a>
                 <div class="menu-underline"></div>
               </li>
-              <li>
-                <a href="#">Contact</a>
+              <!-- <li>
+                <a href="contact.html">Contact</a>
                 <div class="menu-underline"></div>
+              </li> -->
+              <!-- <li>
+                <a href="#" onclick="setTimeout(openShop);">Order</a>
+              </li> -->
+              <li>
+                <a href="order.html">Order</a>
               </li>
               <li>
-                <a href="#"  onclick="setTimeout(openShop);" class="menu-btn">Order now</a>
+                <!-- <a href="#" onclick="setTimeout(login);" class="menu-btn">Log in</a> -->
+                <a href="https://orders.laundrydrop.co.nz/account/login"class="menu-btn">Log in</a>
               </li>
+              <!-- <li>
+                <a href="#" onclick="setTimeout(signUp);" class="menu-btn">Sign up</a>
+              </li> -->
             </ul>
           </nav>
         </div>
@@ -77,10 +105,14 @@
             <li><a href="coverage.html">Coverage</a></li>
             <li><a href="stores.html">Stores</a></li>
             <li><a href="faq.html">FAQ</a></li>
+            <li><a href="order.html">Order</a></li>
             <li><a href="#">Contact</a></li>
             <li>
-              <a href="#"  onclick="setTimeout(openShop);" class="menu-btn">Order now</a>
+              <a href="#" onclick="setTimeout(login);" class="menu-btn">Log in</a>
             </li>
+            <!-- <li>
+              <a href="#" onclick="setTimeout(signUp);" class="menu-btn">Sign up</a>
+            </li> -->
           </ul>
         </div>
     
@@ -95,16 +127,29 @@
     
               <div class="grid-x grid-margin-x hero-content">
                 <div class="cell large-8 medium-8 small-12 hero-text">
-                  <h1>Laundry & Dry Cleaning <br/><span>Delivery and Pick up Service</span></h1>
-                  <p>Wellington, Lower Hutt, Porirua & Johnsonville.</p>
+                  <!-- <h1>Laundry & Dry Cleaning <br/><span>Delivery and Pick up Service</span></h1> -->
+                  <h3>Pick up and delivery of your laundry and drycleaning</h3>
+                  <p>Wellington CBD, Lower Hutt, Porirua &  Kapiti</p>
                   <p>Simple and convenient, <span>we Collect, Clean and Deliver</span> right to your doorstep saving you hours of hassle.</p>
+                  <h5>Proudly Wellington owned by the Mall Drycleaning Group</h5>
                   <div style="float:left; margin-bottom:20px;">
-                  <a href="#" style="float:left"  onclick="setTimeout(openShop);"  class="primary-btn">Order a pickup<i class="icon ion-tshirt"></i></a>
+                  <a href="order.html" style="float:left" class="primary-btn">Order online<i class="icon ion-tshirt"></i></a>
                   </div>
                   <div style="float:left; margin-bottom:20px;">
-                  <a href="coverage.html"  style="float:left"  class="primary-btn"> Drop off points <i class="icon ion-android-pin"></i></a>
+                  <a href="stores.html"  style="float:left"  class="primary-btn"> Stores <i class="icon ion-android-pin"></i></a>
                   </div>
+                  <!-- <div class="validation-field">
+                    <p>Schedule Laundry and Dry Cleaning</p>
+                    <form class="home-validation">
+                      <input id="postalcode" type="text" class="input-field" placeholder="Enter your postcode to get started">
+                      <input type="button" class="primary-btn" value="Get started" id="postalSubmit">
+                    </form>
+                    <p class="invalid-postal-code">Unfortunately we are not currently available in your area.</p>
+                  </div> -->
+    
+    
                 </div>
+    
                 <div class="cell large-4 medium-4 small-12 hero-img">
                   <img src="assets/img/drop_home.svg" alt="drop illustration">
                 </div>
@@ -113,28 +158,20 @@
             </div>
           </div>
       </div>
-      <div class="wave-pattern">
+      <!-- <div class="wave-pattern">
         <img src="assets/img/Waves_02.svg" alt="">
-      </div>
+      </div> -->
     </div>
     <div class="home-intro-wrapper">
       <div class="grid-container">
+    
         <div class="grid-x intro-content">
-          <div class="cell large-4 medium-4 large-offset-1 medium-offset-1 intro-text-01">
-            <p>Laundry & Dry Cleaning to your door let us take the load off your hands</p>
-          </div>
-          <div class="cell large-2 medium-2 vertical-dots">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="cell large-4 medium-4 intro-text-02">
-            <p>Laundry & Dry Cleaning to your door let us take the load off your hands</p>
+          <div class="cell large-10 large-offset-1 intro-text-03">
+            <h4>*Laundry & Dry Cleaning to your door let us take the load off your hands*</h4>
+            <p>Laundry Drop is laundry and dry cleaning service that delivers at the click of a mouse — so you can get back to doing what you really love. Clean clothes are a team effort. We’re dedicated to taking care of your laundry and dry-cleaning every step of the way.</p>
           </div>
         </div>
+    
         <div class="grid-x">
           <div class="cell large-12 intro-icon">
             <img src="assets/img/van.svg" alt="">
@@ -145,32 +182,67 @@
         <img src="assets/img/curve.svg" alt="">
       </div>
     </div>
-    <div class="how-it-works-wrapper">
+    
+    
+    <!-- <section class="home-process-wrapper">
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell large-10 large-offset-1">
+            <h3>How Laundry drop works</h3>
+            <div class="home-process-steps">
+              <div class="grid-x grid-margin-x">
+    
+                <div class="cell large-4 medium-4 small-12 step-item">
+                  <img src="assets/img/order_step_01.svg" alt="">
+                  <h4>Step 1</h4>
+                  <p>Schedule for one of our drivers to pickup your laundry or dry cleaning.</p>
+                </div>
+    
+                <div class="cell large-4 medium-4 small-12 step-item">
+                  <img src="assets/img/order_step_02.svg" alt="">
+                  <h4>Step 2</h4>
+                  <p>We collect your order with custom bags so your clothes are protected in style.</p>
+                </div>
+    
+                <div class="cell large-4 medium-4 small-12 step-item">
+                  <img src="assets/img/order_step_03.svg" alt="">
+                  <h4>Step 3</h4>
+                  <p>Your clothes are returned fresh
+                  and pristine 48 hours later.</p>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    
+    <section class="how-it-works-wrapper">
       <div class="grid-container">
         <h3>How it works</h3>
         <div class="grid-x">
     
-          <div class="large-6 medium-6 small-12 order">
-            <div class="order-content">
+          <div class="large-6 medium-6 small-12 order-pickup">
+            <div class="order-pickup-content">
               <h5>Order a pick up</h5>
     
               <div class="step-item">
-                <p>Schedule a pickup for now or later.</p>
+                <p>Schedule for one of our drivers to pickup your laundry or dry cleaning.</p>
                 <div class="step-img">
                   <img src="assets/img/order-step01.svg" alt="">
                 </div>
               </div>
     
               <div class="step-item">
-                <p>Our drivers will swing by with custom laundry and garment bags to collect your items—so your clothes are protected in style.</p>
+                <p>We collect your order with custom bags so your clothes are protected in style.</p>
                 <div class="step-img">
                   <img src="assets/img/order-step02.svg" alt="">
                 </div>
               </div>
     
               <div class="step-item">
-                <p>Your clothes are returned fresh
-                and pristine 24 hours later.</p>
+                <p>Your clothes are returned 48 hours later.</p>
                 <div class="step-img">
                   <img src="assets/img/order-step03.svg" alt="">
                 </div>
@@ -179,52 +251,47 @@
             </div>
           </div>
     
-    
           <div class="large-6 medium-6 small-12 drop-off">
             <div class="drop-off-content">
-              <h5>Order a pick up</h5>
+              <h5>Drop off to one of our stores</h5>
     
               <div class="step-item">
                 <div class="step-img">
                   <img src="assets/img/dropoff-step01.svg" alt="">
                 </div>
-                <p>Simply drop-off to one of our 70 depots conveniently located in the wider Wellington region.</p>
+                <p>Simply drop-off to one of our 17 <a href="stores.html">stores</a> located in the wider Wellington region.</p>
               </div>
     
               <div class="step-item">
                 <div class="step-img">
                   <img src="assets/img/dropoff-step02.svg" alt="">
                 </div>
-                <p>Fill in the order form and leave your laundry safely with our depot operators.</p>
+                <p>Our friendly staff will make sure your laundry or drycleaning is processed.</p>
               </div>
     
               <div class="step-item">
                 <div class="step-img">
                   <img src="assets/img/dropoff-step03.svg" alt="">
                 </div>
-                <p>Your clothes are returned to the depot or to your address, fresh and pristine 24 hours later.</p>
+                <p>Choose to Pick up from the store you dropped off from or one of our other <a href="stores.html">stores</a> locations.</p>
               </div>
     
             </div>
           </div>
     
+    
         </div>
       </div>
     
-      <div class="vertical-dots">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+    </section>
     
-      <div class="grid-x">
-        <div class="cell large-8 large-offset-2 how-it-works-footer">
-          <p>We are the laundry and dry cleaning service that delivers at the click of a mouse — so you can get back to doing what you really love. Clean clothes are a team effort. We’re dedicated to taking care of your laundry and dry-cleaning every step of the way</p>
-        </div>
-      </div>
+    <div class="vertical-dots">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
     <div class="environment-wrapper">
       <div class="environment-curve">
@@ -268,55 +335,50 @@
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
     
-          <div class="cell large-3 medium-3 footer-contact">
+          <div class="cell large-3 medium-3 footer-brand">
             <div class="footer-logo">
               <img src="assets/img/logo.svg" alt="">
             </div>
+            <p>Proudly Wellington owned by the Mall Drycleaning Group</p>
             <div class="mall-logo">
               <img src="assets/img/mall_logo.svg" alt="Mall Group Logo">
             </div>
     
+          </div>
+    
+          <div class="cell large-2 medium-2">
+            <h6>COMPANY</h6>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="stores.html">Stores</a></li>
+              <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+          </div>
+    
+          <div class="cell large-3 medium-3">
+            <h6>OUR BRANDS</h6>
+            <ul>
+              <li><a href="stores.html">Mall Dry Cleaners</a></li>
+              <li><a href="stores.html">New Zealand Dry Cleaners (NZDC)</a></li>
+              <li><a href="stores.html">Taylors Dry Cleaners</a></li>
+              <li><a href="stores.html">Kapiti Dry Cleaners</a></li>
+              <li><a href="stores.html">Willis Dry Cleaners</a></li>
+              <li><a href="stores.html">City Dry Cleaners</a></li>
+            </ul>
+          </div>
+    
+          <div class="cell large-4 medium-4 footer-contact">
+            <h6>CONTACT</h6>
+            <p>80 Tory Street, Wellington</p>
+            <p><strong>Phone:</strong> (04) 384 6668</p>
+            <p><strong>Email:</strong> <a href="mailto:info@laundrydrop.co.nz">info@laundrydrop.co.nz</a></p>
             <div class="social-footer">
               <ul>
+                <li>Follow us </li>
                 <li><a href="#"><img src="assets/img/social/twitter.svg" alt=""></a></li>
                 <li><a href="#"><img src="assets/img/social/facebook.svg" alt=""></a></li>
                 <li><a href="#"><img src="assets/img/social/instagram-logo.svg" alt=""></a></li>
               </ul>
-            </div>
-    
-          </div>
-    
-          <div class="cell large-3 medium-3">
-            <h6>Company</h6>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Coverage</a></li>
-              <li><a href="">Contact</a></li>
-            </ul>
-          </div>
-    
-          <div class="cell large-3 medium-3">
-            <h6>Our Brands</h6>
-            <ul>
-              <li><a href="">Mall Dry Cleaners</a></li>
-              <li><a href="">New Zealand Dry Cleaners (NZDC)</a></li>
-              <li><a href="">Taylors Dry Cleaners</a></li>
-              <li><a href="">Kapiti Dry Cleaners</a></li>
-              <li><a href="">Willis Dry Cleaners</a></li>
-              <li><a href="">City Dry Cleaners</a></li>
-            </ul>
-          </div>
-    
-    
-          <div class="cell large-3 medium-3">
-            <div class="footer-subscribe">
-              <h5>Sign up to our newsletter</h5>
-              <p>Recieve special offers and news by subscribing to our monthly newsletters.</p>
-              <div class="subscribe-input">
-                <input type="text" placeholder="Email address" />
-                <a class="subscribe-btn" href="#">Subscribe</a>
-              </div>
             </div>
           </div>
     
@@ -325,11 +387,16 @@
     
     </footer>
     
-    <div class="copyright-wrapper">
+    <div class="terms-conditions">
       <div class="grid-container">
         <div class="grid-x grid-margin-x">
           <div class="cell larger-12">
-            <p>© 2018 LaundryDrop, Wellington. All rights reserved.</p>
+            <ul>
+              <li>© 2018 LaundryDrop, Wellington. All rights reserved.</li>
+              <li><a href="">Terms of Service</a></li>
+              <li><a href="">Refund Policy</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
           </div>
         </div>
       </div>
