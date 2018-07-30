@@ -7097,6 +7097,9 @@ p {
   .order .order-content .invalid-postal-code {
     margin-top: 20px;
     font-style: normal; }
+    .order .order-content .invalid-postal-code a {
+      color: #fefefe;
+      text-decoration: underline; }
 
 .order .input-field {
   width: 450px;
