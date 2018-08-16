@@ -7103,7 +7103,9 @@ p {
 .faqs-wrapper .accordion-title {
   font-size: 18px;
   color: #284856;
-  transition: background 0.25s; }
+  transition: background 0.25s;
+  padding-right: 50px;
+  line-height: normal; }
 
 .faqs-wrapper .accordion-title:hover {
   background: #1399bc !important;
@@ -7111,6 +7113,9 @@ p {
 
 .faqs-wrapper .accordion-content {
   background: #f7f7f7; }
+
+.accordion-title::before {
+  margin-left: 50px !important; }
 
 .order .order-content {
   height: 100vh;
@@ -7136,12 +7141,16 @@ p {
       text-decoration: underline; }
 
 .order .input-field {
-  width: 450px;
+  width: 300px;
   border-radius: 3px; }
 
 .order #postalSubmit {
   width: 150px;
   cursor: pointer; }
+
+@media screen and (min-width: 40em) {
+  .order .input-field {
+    width: 450px; } }
 
 .invalid-postal-code {
   visibility: hidden; }
