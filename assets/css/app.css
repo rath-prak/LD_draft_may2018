@@ -6722,12 +6722,12 @@ p {
     display: block; } }
 
 .wave-bottom {
-  bottom: 0;
-  -webkit-transform: scaleX(1.2) translateY(1px) !important;
-      -ms-transform: scaleX(1.2) translateY(1px) !important;
-          transform: scaleX(1.2) translateY(1px) !important; }
+  width: 100%;
+  overflow: hidden;
+  bottom: 0; }
   .wave-bottom img {
-    width: 100% !important; }
+    width: 100% !important;
+    width: 200px; }
 
 .wave-pattern img {
   width: 100% !important; }
@@ -7081,6 +7081,16 @@ p {
   color: #284856;
   font-weight: 700;
   text-decoration: underline; }
+
+.hero-mall-group {
+  display: none; }
+
+@media screen and (min-width: 40em) {
+  .hero-mall-group {
+    display: block;
+    width: 200px !important; }
+    .hero-mall-group img {
+      width: 100%; } }
 
 .faqs-wrapper .faqs-section {
   margin-bottom: 30px; }
