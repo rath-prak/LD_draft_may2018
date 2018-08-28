@@ -6219,12 +6219,20 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700; }
 
-p {
+p, a {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none; }
+
+a {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600 !important;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  font-size: 18px; }
 
 /* FULL PAGE HEADER IMAGE */
 .fp-header {
