@@ -6615,7 +6615,8 @@ a {
       margin-right: 30px;
       margin-top: 10px; }
     .terms-conditions ul a {
-      color: #fefefe; }
+      color: #fefefe;
+      font-size: 14px; }
 
 @media screen and (max-width: 39.9375em) {
   .footer-brand {
@@ -6665,8 +6666,7 @@ a {
   color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.12);
   background: #014c62;
-  letter-spacing: -.01em;
-  text-transform: uppercase; }
+  letter-spacing: -.01em; }
   .primary-btn i,
   .menu-btn i {
     margin-left: 15px;
@@ -6675,9 +6675,10 @@ a {
 .menu-btn {
   line-height: 1.4em;
   padding: 8px 24px 8px;
-  font-size: 12px;
+  font-size: 16px;
   color: #fefefe !important;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-transform: uppercase; }
 
 .primary-btn:hover,
 .menu-btn:hover {
